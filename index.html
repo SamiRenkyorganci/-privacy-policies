@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Message — Gizlilik Politikası</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, 'Segoe UI', Helvetica, sans-serif;
+            background: #050507;
+            color: #C8C8D0;
+            line-height: 1.7;
+            padding: 0;
+        }
+        .header {
+            border-bottom: 1px solid rgba(212, 168, 70, 0.15);
+            padding: 40px 24px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #D4A846;
+            letter-spacing: -0.5px;
+        }
+        .header p {
+            color: #6B6B7B;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            color: #D4A846;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 36px 0 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(212, 168, 70, 0.1);
+        }
+        h3 {
+            color: #C8C8D0;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 20px 0 8px;
+        }
+        p, li {
+            color: #9A9AA8;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+        li { margin-bottom: 6px; }
+        strong { color: #C8C8D0; }
+        .highlight {
+            background: rgba(212, 168, 70, 0.06);
+            border: 1px solid rgba(212, 168, 70, 0.1);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+        .highlight p { color: #D4A846; margin: 0; font-weight: 500; }
+        .footer {
+            text-align: center;
+            padding: 32px 24px;
+            border-top: 1px solid rgba(212, 168, 70, 0.08);
+            color: #4A4A58;
+            font-size: 13px;
+        }
+        a { color: #D4A846; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Ghost Message</h1>
+    <p>Gizlilik Politikası</p>
+</div>
+
+<div class="container">
+
+    <p><strong>Yürürlük Tarihi:</strong> 14 Nisan 2026</p>
+    <p>Bu gizlilik politikası, Ghost Message uygulamasının ("Uygulama") kullanıcı verilerini nasıl topladığını, kullandığını ve koruduğunu açıklamaktadır.</p>
+
+    <div class="highlight">
+        <p>Tüm verileriniz yalnızca kendi cihazınızda saklanır. Hiçbir veri sunucuya gönderilmez.</p>
+    </div>
+
+    <h2>1. Toplanan Veriler</h2>
+
+    <h3>1.1 Bildirim Verileri</h3>
+    <p>Uygulama, Android işletim sisteminin <strong>NotificationListenerService</strong> özelliğini kullanarak cihazınıza gelen bildirimleri okur. Okunan bildirim verileri şunlardır:</p>
+    <ul>
+        <li>Bildirim başlığı (gönderen adı)</li>
+        <li>Bildirim metni (mesaj içeriği)</li>
+        <li>Kaynak uygulama adı ve paket adı</li>
+        <li>Bildirim zamanı</li>
+    </ul>
+
+    <h3>1.2 Reklam Verileri</h3>
+    <p>Uygulama, reklam gösterimi için <strong>Google AdMob</strong> hizmetini kullanmaktadır. Google, reklam kişiselleştirme amacıyla cihaz tanımlayıcıları ve kullanım verileri toplayabilir. Bu veriler Google'ın kendi gizlilik politikası kapsamında işlenir.</p>
+
+    <h2>2. Verilerin Saklanması</h2>
+    <p>Bildirim verileri <strong>yalnızca cihazınızdaki yerel veritabanında (SQLite)</strong> saklanır.</p>
+    <ul>
+        <li>Hiçbir veri uzak sunuculara gönderilmez</li>
+        <li>Hiçbir bulut depolama hizmeti kullanılmaz</li>
+        <li>Kullanıcı hesabı veya kayıt sistemi yoktur</li>
+        <li>Veriler yalnızca sizin cihazınızda mevcuttur</li>
+    </ul>
+    <p>Uygulamayı kaldırdığınızda tüm veriler otomatik olarak silinir. Ayrıca uygulama içindeki Ayarlar bölümünden istediğiniz zaman tüm verileri manuel olarak silebilirsiniz.</p>
+
+    <h2>3. Bildirim Erişimi İzni</h2>
+    <p>Uygulama, çalışabilmek için Android <strong>Bildirim Erişimi (Notification Access)</strong> iznine ihtiyaç duyar. Bu izin:</p>
+    <ul>
+        <li>Yalnızca bildirimleri okumak için kullanılır</li>
+        <li>Bildirim göndermek, değiştirmek veya silmek için <strong>kullanılmaz</strong></li>
+        <li>Cihazınızdaki diğer uygulamalara müdahale etmez</li>
+        <li>İstediğiniz zaman Android Ayarlar menüsünden kaldırılabilir</li>
+    </ul>
+
+    <h2>4. Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulama aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:</p>
+
+    <h3>Google AdMob</h3>
+    <p>Reklam gösterimi için kullanılır. Google AdMob'un veri toplama uygulamaları hakkında detaylı bilgi için:</p>
+    <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob ve Gizlilik</a></li>
+    </ul>
+
+    <h2>5. Çocukların Gizliliği</h2>
+    <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir. Bilerek 13 yaş altı kullanıcılardan kişisel bilgi toplamayız. Ebeveyn veya vasiler, çocuklarının bu uygulamayı kullandığını fark ederlerse bizimle iletişime geçebilirler.</p>
+
+    <h2>6. Veri Güvenliği</h2>
+    <p>Verileriniz yalnızca cihazınızda saklandığından, veri güvenliği doğrudan cihazınızın güvenliğine bağlıdır. Cihazınızı şifre, PIN veya biyometrik kilitle korumanızı öneririz.</p>
+
+    <h2>7. Politika Değişiklikleri</h2>
+    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfada yayınlanacak ve yürürlük tarihi güncellenecektir. Önemli değişiklikler için uygulama içi bildirim yapılabilir.</p>
+
+    <h2>8. İletişim</h2>
+    <p>Bu gizlilik politikası hakkında sorularınız için:</p>
+    <ul>
+        <li><strong>E-posta:</strong> ghostmessage.app@gmail.com</li>
+    </ul>
+
+</div>
+
+<div class="footer">
+    <p>Ghost Message &copy; 2026 — Tüm hakları saklıdır.</p>
+</div>
+
+</body>
+</html>
